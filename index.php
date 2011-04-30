@@ -14,6 +14,13 @@
 <script type="text/javascript">
 show_tags();
 </script>
+<?php
+$query = WP_Query('showposts=2');
+while ($query->have_posts()) {
+  $query->the_post();
+  echo "A post!";
+}
+?>
 <!-- END TEST -->
 
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
