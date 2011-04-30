@@ -17,7 +17,8 @@
 			wp_enqueue_style('style', get_bloginfo('template_directory') . '/styles/screen.css', array('inuit'), '1.0', 'screen');
 			wp_enqueue_style('print', get_bloginfo('template_directory') . '/styles/print.css', array('inuit'), '1.0', 'print');
         }
+    if (!is_page() || is_single()) {
+      wp_enqueue_script('script', get_bloginfo('template_directory') . '/scripts/blog-tags.js');
     }
-
-    
+  }
 ?>
