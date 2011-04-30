@@ -1,0 +1,9 @@
+/* line 1, ../sass/screen.sass */
+article.hidden {
+  display: none;
+}
+
+/* line 4, ../sass/screen.sass */
+div#tempload {
+  display: none;
+}
