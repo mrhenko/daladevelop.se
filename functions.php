@@ -1,7 +1,7 @@
 <?php
 
-function whoIsKing()
-{
+function whoIsKing() {
     return "Emil Österlund";
-
 }
+
+?>
