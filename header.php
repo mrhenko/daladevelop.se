@@ -18,6 +18,10 @@
 	
 	<?php wp_head(); ?>
 	
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/styles/html5.js"></script>
+	<![endif]-->
+    
 	<!--[if lte IE 7]>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/ie7.css" media="screen" type="text/css" />
 	<![endif]-->
