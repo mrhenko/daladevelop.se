@@ -6,7 +6,6 @@
         define('WP_DEBUG',true);
 
 	add_action('init', 'daladevelop_init');
-	add_filter('nav_menu_css_class', 'daladevelop_navmenu_classes');
 	
 	/*
 		Initialize stylesheets and scripts.
@@ -22,15 +21,5 @@
 		if (!is_page() || is_single()) {
 		  // Here be blog code
 		}
-	}
-	
-	function daladevelop_navmenu_classes($classes, $item) {
-		print_r($item);
-		
-		if(true == false){
-			$classes[] = "special";
-		}
-		
-		return $classes;
 	}
 ?>
