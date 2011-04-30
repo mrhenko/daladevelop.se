@@ -11,17 +11,14 @@
 <section id="wrapper">
 
 <!-- BEGIN TEST //spektre -->
-<script type="text/javascript">
-//show_tags();
-</script>
-<button type="button" onclick="show_tags()">Button!</button>
 <?php
-$query = new WP_Query('showposts=2');
-wp_tag_cloud('number=0');
-while ($query->have_posts()) {
-  $query->the_post();
-  echo "A post!";
-}
+echo wp_tag_cloud('number=0');
+
+#$query = new WP_Query('showposts=2');
+#while ($query->have_posts()) {
+#  $query->the_post();
+#  echo "A post!";
+#}
 ?>
 <!-- END TEST -->
 
