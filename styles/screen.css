@@ -26,3 +26,12 @@ article.new {
 div#tempload {
   display: none;
 }
+
+/* line 23, ../sass/screen.sass */
+#menu ul {
+  list-style-type: none;
+}
+/* line 25, ../sass/screen.sass */
+#menu ul li {
+  float: left;
+}
