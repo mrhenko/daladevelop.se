@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="sv">
+<html <?php language_attributes(); ?>>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
+	<meta name="viewport" content="width=device-width" />
+    
 	<title><?php bloginfo('name'); ?></title>
 	
 	<link href="favicon.ico" type="image/x-icon" rel="icon" />
@@ -16,6 +18,10 @@
 	
 	<?php wp_head(); ?>
 	
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/styles/html5.js"></script>
+	<![endif]-->
+    
 	<!--[if lte IE 7]>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/ie7.css" media="screen" type="text/css" />
 	<![endif]-->
