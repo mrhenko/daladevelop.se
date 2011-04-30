@@ -11,15 +11,15 @@
 <section id="wrapper">
 
 <!-- BEGIN TEST //spektre -->
-<?php
-echo wp_tag_cloud('number=0');
-
-#$query = new WP_Query('showposts=2');
-#while ($query->have_posts()) {
-#  $query->the_post();
-#  echo "A post!";
-#}
-?>
+<h1>Testar</h1>
+<p>
+<li>
+<ul>
+<?php wp_tag_cloud('number=0'); ?>
+</ul>
+</li>
+</p>
+<h1>Sluttestat</h1>
 <!-- END TEST -->
 
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
