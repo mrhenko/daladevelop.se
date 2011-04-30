@@ -1,10 +1,11 @@
 (function ($) { 
 	$(document).ready(function() {
 		// Hijack links and load via ajax
-		$('a').click(function(event) {
+		$('#wrapper').delegate('a', 'click', function(event) {
 			event.preventDefault();
-			var url = $(this).attr('href');
-			url = url + ' #wrapper article';
+			
+			var url = $(this).attr('href') + ' #wrapper article';
+			
 			$('body').append('<div id="tempload" class="hidden"></div>');
 			$('#tempload').load(url, function() {
 				$('div#tempload').children('article').addClass('new');
