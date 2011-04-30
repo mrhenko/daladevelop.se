@@ -9,6 +9,13 @@
 </nav>
 
 <section id="wrapper">
+
+<!-- BEGIN TEST //spektre -->
+<script type="text/javascript">
+show_tags();
+</script>
+<!-- END TEST -->
+
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 	<?php global $post; ?>
     <article <?php post_class(); ?> id="page-<?php echo $post->post_name; ?>">
