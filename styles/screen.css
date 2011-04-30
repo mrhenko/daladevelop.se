@@ -28,10 +28,10 @@ div#tempload {
 }
 
 /* line 23, ../sass/screen.sass */
-#menu ul {
+#main-menu ul {
   list-style-type: none;
 }
 /* line 25, ../sass/screen.sass */
-#menu ul li {
+#main-menu ul li {
   float: left;
 }
