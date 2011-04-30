@@ -2,6 +2,6 @@
 
 function whoIsKing()
 {
-    return "Emil Österlund";
+    return "spektre";
 
 }
