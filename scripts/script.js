@@ -1,7 +1,7 @@
 (function ($) { 
 	$(document).ready(function() {
 		// Hijack links and load via ajax
-		$('#wrapper').delegate('a', 'click', function(event) {
+		$('#wrapper').delegate('a.dd_ajax', 'click', function(event) {
 			event.preventDefault();
 			
 			var url = $(this).attr('href') + ' #wrapper article';
