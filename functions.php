@@ -6,6 +6,7 @@
         define('WP_DEBUG',true);
 
 	add_action('init', 'daladevelop_init');
+	add_filter('nav_menu_css_class', 'daladevelop_navmenu_classes');
 	
 	/*
 		Initialize stylesheets and scripts.
@@ -17,8 +18,19 @@
 			wp_enqueue_style('style', get_bloginfo('template_directory') . '/styles/screen.css', array('inuit'), '1.0', 'screen');
 			wp_enqueue_style('print', get_bloginfo('template_directory') . '/styles/print.css', array('inuit'), '1.0', 'print');
         }
-    if (!is_page() || is_single()) {
-      // Here be blog code
-    }
-  }
+		
+		if (!is_page() || is_single()) {
+		  // Here be blog code
+		}
+	}
+	
+	function daladevelop_navmenu_classes($classes, $item) {
+		print_r($item);
+		
+		if(true == false){
+			$classes[] = "special";
+		}
+		
+		return $classes;
+	}
 ?>
