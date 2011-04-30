@@ -1,9 +1,28 @@
-/* line 1, ../sass/screen.sass */
-article.hidden {
-  display: none;
+/* line 3, ../sass/screen.sass */
+body {
+  overflow-x: hidden;
 }
 
-/* line 4, ../sass/screen.sass */
+/* line 6, ../sass/screen.sass */
+article {
+  width: 100%;
+  float: left;
+  position: relative;
+  left: 0%;
+}
+
+/* line 13, ../sass/screen.sass */
+article.hidden.old {
+  margin-left: -100%;
+  overflow-x: hidden;
+}
+
+/* line 17, ../sass/screen.sass */
+article.new {
+  left: 100%;
+}
+
+/* line 20, ../sass/screen.sass */
 div#tempload {
   display: none;
 }

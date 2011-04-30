@@ -1,5 +1,21 @@
-article.hidden
-	display: none
+@import 'compass/css3'
+
+body
+	overflow-x: hidden
+
+article
+	width: 100%
+	float: left
+	//+transition(all, 1s, linear)
+	position: relative
+	left: 0%
+
+article.hidden.old
+	margin-left: -100%
+	overflow-x: hidden
+
+article.new
+	left: 100%
 
 div#tempload
 	display: none
