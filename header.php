@@ -25,10 +25,6 @@
 	<!--[if lte IE 7]>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/ie7.css" media="screen" type="text/css" />
 	<![endif]-->
-	
-	<!--[if lt IE 7]>
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/ie6.css" media="screen" type="text/css" />
-	<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
