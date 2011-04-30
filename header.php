@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="sv">
+<html <?php language_attributes(); ?>>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
+	<meta name="viewport" content="width=device-width" />
+    
 	<title><?php bloginfo('name'); ?></title>
 	
 	<link href="favicon.ico" type="image/x-icon" rel="icon" />

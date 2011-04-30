@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-
-<html class="no-js">
-
-<head>
-	<meta charset="UTF-8" />
-	<title><?php bloginfo('title') ?></title>
-</head>
+<?php get_header(); ?>
 
 <header id="branding">
 	<h1><?php bloginfo('title'); ?></h1>
@@ -28,4 +21,4 @@
 <?php endif; ?>
 </section>
 
-</html>
+<?php get_footer(); ?>
