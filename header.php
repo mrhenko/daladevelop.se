@@ -16,6 +16,9 @@
 		if(typeof jQuery == 'undefined') { document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/scripts/jquery.min.js' type='text/javascript'%3E%3C/script%3E")); }
 	</script>
 	
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/screen.css" />
+	
 	<?php wp_head(); ?>
 	
 	<!--[if lte IE 7]>
