@@ -4,13 +4,13 @@
 
 <!-- BEGIN TEST //spektre -->
 <h1>Testar</h1>
-<p>
-<li>
-<ul>
-<?php wp_tag_cloud('number=0'); ?>
-</ul>
-</li>
-</p>
+<?php
+$tags = get_tags();
+foreach($tags as $tag)
+{
+  echo '<input type="checkbox" id="'.$tag->slug.'" name="'.$tag->slug.'" value="'.$tag->name.'">'.$tag->name.'</input>';
+}
+?>
 <h1>Sluttestat</h1>
 <!-- END TEST -->
 
