@@ -1,12 +1,5 @@
 <?php
-<<<<<<< HEAD
 
-function whoIsKing()
-{
-    return "spektre";
-
-}
-=======
 	add_action('init', 'daladevelop_init');
 	
 	/*
@@ -21,4 +14,3 @@ function whoIsKing()
 		}
 	}
 ?>
->>>>>>> f5433aeaa6318471430e726d1aee29b01599b0e8
