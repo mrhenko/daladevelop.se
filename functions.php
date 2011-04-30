@@ -1,6 +1,7 @@
 <?php
 	add_action('init', 'daladevelop_init');
-	
+    add_theme_support('menus');
+
 	/*
 		Initialize stylesheets and scripts.
 	*/	
