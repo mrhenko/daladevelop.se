@@ -1,10 +1,4 @@
 <?php
-
-
-    // POSSIBILITY TO DEBUG
-    if(isset($_GET['debug']))
-        define('WP_DEBUG',true);
-
 	add_action('init', 'daladevelop_init');
 	
 	/*

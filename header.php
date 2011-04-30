@@ -5,7 +5,7 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width" />
-    
+	
 	<title><?php bloginfo('name'); ?></title>
 	
 	<link href="favicon.ico" type="image/x-icon" rel="icon" />
@@ -18,13 +18,20 @@
 	
 	<?php wp_head(); ?>
 	
-    <!--[if lt IE 9]>
-        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/styles/html5.js"></script>
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/styles/html5.js"></script>
 	<![endif]-->
-    
+	
 	<!--[if lte IE 7]>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/ie7.css" media="screen" type="text/css" />
 	<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
+	<header id="branding">
+		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('title'); ?></a></h1>
+	</header>
+	
+	<nav id="main-menu">
+		<?php wp_nav_menu(array('container' => false)); ?>
+	</nav>
