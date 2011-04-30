@@ -15,3 +15,8 @@
 		});
 	});
 })(jQuery)
+
+
+function show_tags() {
+  alert("This is tags, believe it.");
+}
