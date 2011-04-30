@@ -1,13 +1,5 @@
 <?php get_header(); ?>
 
-<header id="branding">
-	<h1><?php bloginfo('title'); ?></h1>
-</header>
-
-<nav id="main-menu">
-	<?php wp_nav_menu(); ?>
-</nav>
-
 <section id="wrapper">
 
 <!-- BEGIN TEST //spektre -->
