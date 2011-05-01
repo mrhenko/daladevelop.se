@@ -40,8 +40,3 @@ function post_tag_form() {
 
   $("#post_div").load("wp-content/themes/daladevelop.se/apps/get_posts.php", data);
 }
-<<<<<<< HEAD
-=======
-function show_tags() {
-}
->>>>>>> 9e8ab9845cc736a1841c038f9f27ea375be368cd
