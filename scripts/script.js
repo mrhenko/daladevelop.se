@@ -3,7 +3,7 @@ var timer;
 (function ($) { 
 	$(document).ready(function() {
 		// Hijack links and load via ajax
-		$('#wrapper').delegate('a.dd_ajax', 'click', function(event) {
+		$('body').delegate('li.ddajax a', 'click', function(event) {
 			event.preventDefault();
 			
 			var url = $(this).attr('href') + ' #wrapper article';
@@ -27,6 +27,7 @@ var timer;
   });
 })(jQuery)
 
+<<<<<<< HEAD
 function post_tag_form() {
   var data = { 'tags[]': [] };
   $(':checked').each(function() {
@@ -36,3 +37,7 @@ function post_tag_form() {
   $("#post_div").load("wp-content/themes/daladevelop.se/apps/get_posts.php",
       data);
 }
+=======
+function show_tags() {
+}
+>>>>>>> 57c5e6217fac927734d7dda509597f589a90d717

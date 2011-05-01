@@ -20,7 +20,43 @@ article.new
 div#tempload
 	display: none
 
-#menu ul
+#main-menu ul
 	list-style-type: none
 	li
 		float: left
+		padding: 0 25px 0 0
+
+#tagcloud ul
+	margin: 0px
+
+#tagcloud li
+	display: block
+	width: 62px
+	height: 30px
+	float: left
+	margin-bottom: 5px
+	margin-right: 15px
+
+#tagcloud input[type=checkbox]
+	display: block
+	position: absolute
+	opacity: 0
+	width: 62px
+	height: 30px
+
+#tagcloud input[type=checkbox] + label
+	display: block
+	width: 60px
+	line-height: 1.5em
+	padding: 3px
+	text-align: center
+	border: 1px solid #000
+	+border-radius(5px)
+	+box-shadow(2px 2px 2px #000)
+
+#tagcloud label:after
+	content: ''
+
+#tagcloud input[type=checkbox]:checked + label
+	background: #88bfe8
+	color: #ff0
