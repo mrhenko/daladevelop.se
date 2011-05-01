@@ -1,62 +1,71 @@
 @import 'compass/css3'
 
 body
-	overflow-x: hidden
+    overflow-x: hidden
 
 article
-	width: 100%
-	float: left
-	//+transition(all, 1s, linear)
-	position: relative
-	left: 0%
+    width: 100%
+    float: left
+    //+transition(all, 1s, linear)
+    position: relative
+    left: 0%
 
 article.hidden.old
-	margin-left: -300%
-	overflow-x: hidden
+    margin-left: -300%
+    overflow-x: hidden
 
 article.new
-	left: 100%
+    left: 100%
+
+footer
+    width: 100%
+    height: 100px
+    background-color: #333
 
 div#tempload
-	display: none
+    display: none
 
 #main-menu ul
-	list-style-type: none
-	li
-		float: left
-		padding: 0 25px 0 0
+    list-style-type: none
+    li
+        float: left
+        padding: 0 25px 0 0
+tagcloud
+    width: 100px
+    border: 1px solid
+    float: right
 
 #tagcloud ul
-	margin: 0px
+    margin: 0px
 
 #tagcloud li
-	display: block
-	width: 62px
-	height: 30px
-	float: left
-	margin-bottom: 5px
-	margin-right: 15px
+    display: block
+    width: 62px
+    height: 30px
+    float: left
+    margin-bottom: 5px
+    margin-right: 15px
 
 #tagcloud input[type=checkbox]
-	display: block
-	position: absolute
-	opacity: 0
-	width: 62px
-	height: 30px
+    display: block
+    position: absolute
+    opacity: 0
+    width: 62px
+    height: 30px
 
 #tagcloud input[type=checkbox] + label
-	display: block
-	width: 60px
-	line-height: 1.5em
-	padding: 3px
-	text-align: center
-	border: 1px solid #000
-	+border-radius(5px)
-	+box-shadow(2px 2px 2px #000)
+    display: block
+    width: 60px
+    line-height: 1.5em
+    padding: 3px
+    text-align: center
+    border: 1px solid #000
+    +border-radius(5px)
+    +box-shadow(2px 2px 2px #000)
 
 #tagcloud label:after
-	content: ''
+    content: ''
 
 #tagcloud input[type=checkbox]:checked + label
-	background: #88bfe8
-	color: #ff0
+    background: #88bfe8
+    color: #ff0
