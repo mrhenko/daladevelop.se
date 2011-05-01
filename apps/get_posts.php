@@ -13,7 +13,7 @@ while ($query->have_posts()) : $query->the_post();
   the_title();
   the_content();
   echo '</li>'; */
-include("../loopMarkup.php");
+include("../includes/loopMarkup.php");
 endwhile;
 echo '</ul>';
 

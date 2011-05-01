@@ -28,7 +28,10 @@ var timer;
     // Load blog posts when tag checkboxes are clicked
     $('#tagcloud').delegate('#tag_box', 'change', function(event) {
       clearTimeout(timer);
-      timer=setTimeout("post_tag_form()", 2000);
+      timer=setTimeout("post_tag_form()", 1300);
+      $('#posts').animate({opacity: .5});
+      $('#posts').css("background-color: #666;");
+
     });
   });
 })(jQuery)
@@ -39,5 +42,8 @@ function post_tag_form() {
       data['tags[]'].push($(this).val());
   });
 
-  $("#post_div").load("/wp-content/themes/daladevelop.se/apps/get_posts.php", data);
+  $("#posts").load("/wp-content/themes/daladevelop.se/apps/get_posts.php", data);
+  $("#posts").animate({opacity: 1});
+  $("#posts").css("background-color: transparent;");
+
 }
