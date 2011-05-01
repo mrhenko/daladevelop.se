@@ -2,10 +2,6 @@
 
 <section id="wrapper">
 
-<!-- Put all selected blog posts in this div -->
-<div id="post_div" name="post_div">
-</div>
-
 <!-- Show all available tags here -->
 <section id="tagcloud">
 <?php
@@ -26,6 +22,10 @@ echo '</ul>';
 ?>
 </section>
 
+
+<!-- Put all selected blog posts in this div -->
+<div id="post_div" name="post_div">
 <?php get_template_part('loop', 'index'); ?>
+</div>
 
 <?php get_footer(); ?>
