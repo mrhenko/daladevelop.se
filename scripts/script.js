@@ -4,8 +4,10 @@ var timer;
 	$(document).ready(function() {
 		// Hijack links and load via ajax
 		$('body').delegate('li.ddajax a', 'click', function(event) {
-			$(this.remove).not(".current_page_item").event.preventDefault();
-			
+            if(! ($(this).hasClass('current_page_item')))
+            {
+                event.preventDefault();
+            }
 			var url = $(this).attr('href') + ' #wrapper article';
 			
 			$('body').append('<div id="tempload" class="hidden"></div>');
