@@ -12,9 +12,12 @@ var timer;
 			$('#tempload').load(url, function() {
 				$('div#tempload').children('article').addClass('new');
 				var newpage = $('div#tempload').html();
+                $('#wrapper').children('article').animate({left:"500px"},slow);
+
 				$('#wrapper').children('article').addClass('hidden old').removeClass('current');
-				$('#wrapper').append(newpage);
-				$('#wrapper article.new').removeClass('hidden').removeClass('new');
+                $('#wrapper').append(newpage);
+                $('#wrapper article.new').removeClass('hidden').removeClass('new');
+
 				$(this).remove();
 			});
 		});
