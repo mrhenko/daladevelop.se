@@ -36,6 +36,5 @@ function post_tag_form() {
   $("#post_div").load("wp-content/themes/daladevelop.se/apps/get_posts.php",
       data);
 }
-=======
 function show_tags() {
 }
