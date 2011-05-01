@@ -20,24 +20,18 @@ var timer;
 		});
 
     // Load blog posts when tag checkboxes are clicked
-    $('#tag_form').delegate('#tag_box', 'change', function(event) {
+    $('#tagcloud').delegate('#tag_box', 'change', function(event) {
       clearTimeout(timer);
       timer=setTimeout("post_tag_form()", 2000);
     });
   });
 })(jQuery)
 
-<<<<<<< HEAD
 function post_tag_form() {
   var data = { 'tags[]': [] };
   $(':checked').each(function() {
       data['tags[]'].push($(this).val());
   });
 
-  $("#post_div").load("wp-content/themes/daladevelop.se/apps/get_posts.php",
-      data);
+  $("#post_div").load("wp-content/themes/daladevelop.se/apps/get_posts.php", data);
 }
-=======
-function show_tags() {
-}
->>>>>>> 57c5e6217fac927734d7dda509597f589a90d717
