@@ -45,12 +45,19 @@ div#tempload {
   padding: 0 25px 0 0;
 }
 
-/* line 34, ../sass/screen.sass */
+/* line 33, ../sass/screen.sass */
+tagcloud {
+  width: 100px;
+  border: 1px solid;
+  float: right;
+}
+
+/* line 38, ../sass/screen.sass */
 #tagcloud ul {
   margin: 0px;
 }
 
-/* line 37, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
 #tagcloud li {
   display: block;
   width: 62px;
@@ -60,7 +67,7 @@ div#tempload {
   margin-right: 15px;
 }
 
-/* line 45, ../sass/screen.sass */
+/* line 49, ../sass/screen.sass */
 #tagcloud input[type=checkbox] {
   display: block;
   position: absolute;
@@ -69,7 +76,7 @@ div#tempload {
   height: 30px;
 }
 
-/* line 52, ../sass/screen.sass */
+/* line 56, ../sass/screen.sass */
 #tagcloud input[type=checkbox] + label {
   display: block;
   width: 60px;
@@ -89,12 +96,12 @@ div#tempload {
   box-shadow: 2px 2px 2px black 1px 1px 5px 0;
 }
 
-/* line 62, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 #tagcloud label:after {
   content: "";
 }
 
-/* line 65, ../sass/screen.sass */
+/* line 69, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;

@@ -34,4 +34,5 @@
 	
 	<nav id="main-menu" class="grids">
 		<?php wp_nav_menu(array('container' => false)); ?>
-	</nav>
+    </nav>
+    <br style="clear:both">
