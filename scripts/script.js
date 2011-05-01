@@ -15,10 +15,10 @@ var timer;
 				$('div#tempload').children('article').addClass('new');
 				var newpage = $('div#tempload').html();
                 $('#wrapper').children('article').animate({left:"5000px"},{ duration: "slow" });
-
-//				$('#wrapper').children('article').addClass('hidden old').removeClass('current');
                 $('#wrapper').append(newpage);
+
                 $('#wrapper article.new').removeClass('hidden').removeClass('new');
+				$('#wrapper').children('article').addClass('hidden old').removeClass('current');
 
 				$(this).remove();
 			});
