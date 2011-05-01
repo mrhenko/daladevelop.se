@@ -81,7 +81,11 @@ div#tempload {
   box-shadow: 2px 2px 2px black;
 }
 
-/* line 57, ../sass/screen.sass */
+/* line 56, ../sass/screen.sass */
+#tagcloud label:after {
+  content: "";
+}
+
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
