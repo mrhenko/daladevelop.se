@@ -27,7 +27,6 @@ var timer;
   });
 })(jQuery)
 
-<<<<<<< HEAD
 function post_tag_form() {
   var data = { 'tags[]': [] };
   $(':checked').each(function() {
@@ -40,4 +39,3 @@ function post_tag_form() {
 =======
 function show_tags() {
 }
->>>>>>> 57c5e6217fac927734d7dda509597f589a90d717
