@@ -3,8 +3,8 @@ var timer;
 (function ($) { 
 	$(document).ready(function() {
 		// Hijack links and load via ajax
-		$('body').not(".current_page_item").delegate('li.ddajax a', 'click', function(event) {
-			event.preventDefault();
+		$('body').delegate('li.ddajax a', 'click', function(event) {
+			$(this.remove).not(".current_page_item").event.preventDefault();
 			
 			var url = $(this).attr('href') + ' #wrapper article';
 			
