@@ -4,13 +4,17 @@
 
 <!-- BEGIN TEST //spektre -->
 <h1>Testar</h1>
+<div id="post_div" name="post_div">
+</div>
+<form id="tag_form", name="tag_form" method="post">
 <?php
 $tags = get_tags();
 foreach($tags as $tag)
 {
-  echo '<input type="checkbox" id="'.$tag->slug.'" name="'.$tag->slug.'" value="'.$tag->name.'">'.$tag->name.'</input>';
+  echo '<input type="checkbox" id="tag_box" name="tag_box" value="'.$tag->slug.'">'.$tag->name.'</input>';
 }
 ?>
+</form>
 <h1>Sluttestat</h1>
 <!-- END TEST -->
 
