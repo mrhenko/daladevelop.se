@@ -1,4 +1,3 @@
-<section id="wrapper">
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 	<?php global $post; ?>
     <article <?php post_class(); ?> id="page-<?php echo $post->post_name; ?>">
@@ -6,4 +5,3 @@
         <?php the_content(); ?>
     </article>
 <?php endwhile; endif; ?>
-</section>
