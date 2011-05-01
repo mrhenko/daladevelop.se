@@ -25,7 +25,7 @@ echo '</ul>';
 
 <!-- Put all selected blog posts in this div -->
 <div id="post_div" name="post_div">
-<?php get_template_part('loop', 'index'); ?>
+    <?php get_template_part('loop', 'index'); ?>
 </div>
 
 <?php get_footer(); ?>

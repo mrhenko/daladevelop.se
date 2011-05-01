@@ -24,26 +24,33 @@ article.new {
 }
 
 /* line 20, ../sass/screen.sass */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #333333;
+}
+
+/* line 25, ../sass/screen.sass */
 div#tempload {
   display: none;
 }
 
-/* line 23, ../sass/screen.sass */
+/* line 28, ../sass/screen.sass */
 #main-menu ul {
   list-style-type: none;
 }
-/* line 25, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 #main-menu ul li {
   float: left;
   padding: 0 25px 0 0;
 }
 
-/* line 29, ../sass/screen.sass */
+/* line 34, ../sass/screen.sass */
 #tagcloud ul {
   margin: 0px;
 }
 
-/* line 32, ../sass/screen.sass */
+/* line 37, ../sass/screen.sass */
 #tagcloud li {
   display: block;
   width: 62px;
@@ -53,7 +60,7 @@ div#tempload {
   margin-right: 15px;
 }
 
-/* line 40, ../sass/screen.sass */
+/* line 45, ../sass/screen.sass */
 #tagcloud input[type=checkbox] {
   display: block;
   position: absolute;
@@ -62,7 +69,7 @@ div#tempload {
   height: 30px;
 }
 
-/* line 47, ../sass/screen.sass */
+/* line 52, ../sass/screen.sass */
 #tagcloud input[type=checkbox] + label {
   display: block;
   width: 60px;
@@ -82,12 +89,12 @@ div#tempload {
   box-shadow: 2px 2px 2px black 1px 1px 5px 0;
 }
 
-/* line 57, ../sass/screen.sass */
+/* line 62, ../sass/screen.sass */
 #tagcloud label:after {
   content: "";
 }
 
-/* line 60, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
