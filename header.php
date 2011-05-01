@@ -32,6 +32,6 @@
 		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('title'); ?></a></h1>
 	</header>
 	
-	<nav id="main-menu">
+	<nav id="main-menu" class="grids">
 		<?php wp_nav_menu(array('container' => false)); ?>
 	</nav>
