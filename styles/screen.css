@@ -34,14 +34,15 @@ div#tempload {
 /* line 25, ../sass/screen.sass */
 #main-menu ul li {
   float: left;
+  padding: 0 25px 0 0;
 }
 
-/* line 28, ../sass/screen.sass */
+/* line 29, ../sass/screen.sass */
 #tagcloud ul {
   margin: 0px;
 }
 
-/* line 31, ../sass/screen.sass */
+/* line 32, ../sass/screen.sass */
 #tagcloud li {
   display: block;
   width: 62px;
@@ -51,7 +52,7 @@ div#tempload {
   margin-right: 15px;
 }
 
-/* line 39, ../sass/screen.sass */
+/* line 40, ../sass/screen.sass */
 #tagcloud input[type=checkbox] {
   display: block;
   position: absolute;
@@ -60,7 +61,7 @@ div#tempload {
   height: 30px;
 }
 
-/* line 46, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 #tagcloud input[type=checkbox] + label {
   display: block;
   width: 60px;
@@ -80,7 +81,7 @@ div#tempload {
   box-shadow: 2px 2px 2px black;
 }
 
-/* line 56, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
