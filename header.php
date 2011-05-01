@@ -19,7 +19,7 @@
 	<?php wp_head(); ?>
 	
 	<!--[if lt IE 9]>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/styles/html5.js"></script>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/html5.js"></script>
 	<![endif]-->
 	
 	<!--[if lte IE 7]>
