@@ -1,23 +1,23 @@
 /* För testning av ajax-slidern */
 
-body {
+body.page {
 	width: auto;
 	overflow-x: hidden;
 }
 
-#wrapper {
+.page #wrapper {
 	overflow-x: visible;
 	width: 100%;
 	display: block;
 	position: relative;
 }
 
-article {
+.page article {
 	width: 100%;
 	float: left;
 	display: inline-block;
 	position: absolute;
+	left: 0px;
 }
 
-article {left: 0px;}
-article.new {left: 100%;}
+.page article.new {left: 100%;}
