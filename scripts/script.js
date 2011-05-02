@@ -3,7 +3,7 @@ var timer;
 (function ($) { 
 	$(document).ready(function() {
 		// Hijack links and load via ajax
-		$('body').delegate('li.ddajax a', 'click', function(event) {
+		$('body.page').delegate('li.ddajax a', 'click', function(event) {
 
 			show_ajax_loading();
 			
