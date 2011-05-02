@@ -5,7 +5,7 @@ var timer;
 		// Hijack links and load via ajax
 		$('body').delegate('li.ddajax a', 'click', function(event) {
 
-			//show_ajax_loading();
+			show_ajax_loading();
 			
 			if(! ($(this).hasClass('current_page_item'))) {
 				event.preventDefault();
@@ -19,13 +19,19 @@ var timer;
 				var newpage = $('div#tempload').html();
                 //$('#wrapper').children('article').animate({left:"5000px"},{ duration: "slow" });
                 
-				$('#wrapper').children('article').addClass('hidden old').removeClass('current');
+				$('#wrapper').children('article').addClass('old');
                 $('#wrapper').append(newpage);
-
-                $('#wrapper article.new').removeClass('hidden').removeClass('new');
-
+                
 				$(this).remove();
-				//hide_ajax_loading();
+				
+				$('#wrapper').animate({
+					left: '-100%'
+				}, 1000, function() {
+					$(this).css('left', '0%');
+					$('#wrapper article.old').remove();
+					$('#wrapper article.new').removeClass('hidden').removeClass('new');
+					hide_ajax_loading();
+				});
 			});
 		});
 
@@ -38,20 +44,33 @@ var timer;
 
     });
   });
+  
+  function show_ajax_loading() {
+	$('body').append('<div id="dd_ajax_loading"><p>Laddar...</p><div id="dd_squares"><span id="dd_ajax_loading_one"></span><span id="dd_ajax_loading_two"></span><span id="dd_ajax_loading_three"></span><span id="dd_ajax_loading_four"></span></div></div>');
+	window.setTimeout(function() {
+		$('#dd_ajax_loading_one').addClass('filled');
+	}, 250);
+	window.setTimeout(function() {
+		$('#dd_ajax_loading_two').addClass('filled');
+	}, 500);
+	window.setTimeout(function() {
+		$('#dd_ajax_loading_three').addClass('filled');
+	}, 750);
+	window.setTimeout(function() {
+		$('#dd_ajax_loading_four').addClass('filled');
+	}, 1000);
+}
+
+function hide_ajax_loading() {
+	$('#dd_ajax_loading').remove();
+}
+  
 })(jQuery)
 
 
 function show_tags() {
 }
 
-function show_ajax_loading() {
-	$('body').append('<div id="dd_ajax_loading"><p>Laddar...</p><span id="dd_ajax_loading_one"></span><span id="dd_ajax_loading_two"></span><span id="dd_ajax_loading_three"></span><span id="dd_ajax_loading_four"></span></div>');
-	var t = setTimeout($('#dd_ajax_loading span').addClass('filled'), 1000);
-}
-
-function hide_ajax_loading() {
-	$('#dd_ajax_loading').remove();
-}
 
 function post_tag_form() {
   var data = { 'tags[]': [] };

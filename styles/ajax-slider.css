@@ -1,0 +1,23 @@
+/* För testning av ajax-slidern */
+
+body {
+	width: auto;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	overflow-x: visible;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+article {
+	width: 100%;
+	float: left;
+	display: inline-block;
+	position: absolute;
+}
+
+article {left: 0px;}
+article.new {left: 100%;}

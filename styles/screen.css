@@ -1,62 +1,165 @@
-/*
-Syntax error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 70 of /Applications/MAMP/htdocs/daladevelop/wp-content/themes/daladevelop/sass/screen.sass
+/* line 3, ../sass/screen.sass */
+body {
+  overflow-x: hidden;
+  font-family: "Lucida Grande";
+}
 
-Backtrace:
-/Applications/MAMP/htdocs/daladevelop/wp-content/themes/daladevelop/sass/screen.sass:70
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:401:in `tabulate'
-/Library/Ruby/Site/1.8/rubygems/custom_require.rb:36:in `each_with_index'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:359:in `each'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:359:in `each_with_index'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:359:in `tabulate'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:322:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:291:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:239:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/util.rb:298:in `silence_sass_warnings'
-/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:239:in `render'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:130:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:129:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:128:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:108:in `compile_if_required'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:95:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:93:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:116:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/compiler.rb:92:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:142:in `recompile'
-/Library/Ruby/Site/1.8/rubygems/custom_require.rb:36:in `to_proc'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `modified'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:15:in `add_handler'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:14:in `each'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:14:in `add_handler'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `call'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `initialize'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:27:in `call'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:27:in `CFRunLoopRun'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/backends/fsevents.rb:27:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
-/Library/Ruby/Gems/1.8/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/watch_project.rb:86:in `perform'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/bin/compass:25
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/bin/compass:39:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.11.1/bin/compass:39
-/usr/bin/compass:19:in `load'
-/usr/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 70 of /Applications/MAMP/htdocs/daladevelop/wp-content/themes/daladevelop/sass/screen.sass"; }
+/* line 7, ../sass/screen.sass */
+article {
+  width: 100%;
+  float: left;
+  position: relative;
+  left: 0%;
+}
+
+/* line 14, ../sass/screen.sass */
+article.hidden.old {
+  margin-left: -300%;
+  overflow-x: hidden;
+}
+
+/* line 18, ../sass/screen.sass */
+article.new {
+  left: 100%;
+}
+
+/* line 21, ../sass/screen.sass */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #333333;
+}
+
+/* line 26, ../sass/screen.sass */
+div#tempload {
+  display: none;
+}
+
+/* line 29, ../sass/screen.sass */
+#main-menu ul {
+  list-style-type: none;
+}
+/* line 31, ../sass/screen.sass */
+#main-menu ul li {
+  float: left;
+  padding: 0 25px 0 0;
+}
+
+/* line 34, ../sass/screen.sass */
+tagcloud {
+  width: 100px;
+  border: 1px solid;
+  float: right;
+}
+
+/* line 39, ../sass/screen.sass */
+#tagcloud ul {
+  margin: 0px;
+}
+
+/* line 42, ../sass/screen.sass */
+#tagcloud li {
+  display: block;
+  width: 62px;
+  height: 30px;
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+
+/* line 50, ../sass/screen.sass */
+#tagcloud input[type=checkbox] {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width: 62px;
+  height: 30px;
+}
+
+/* line 57, ../sass/screen.sass */
+#tagcloud input[type=checkbox] + label {
+  display: block;
+  width: 60px;
+  line-height: 1.5em;
+  padding: 3px;
+  text-align: center;
+  border: 1px solid black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 2px 2px 2px black;
+  -webkit-box-shadow: 2px 2px 2px black;
+  -o-box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
+}
+
+/* line 67, ../sass/screen.sass */
+#tagcloud label:after {
+  content: "";
+}
+
+/* line 70, ../sass/screen.sass */
+#tagcloud input[type=checkbox]:checked + label {
+  background: #88bfe8;
+  color: yellow;
+}
+
+/* För ajax-laddar-grafiken */
+/* line 75, ../sass/screen.sass */
+#dd_ajax_loading {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  background: gray;
+  padding: 10px;
+  margin: 0px;
+  margin-left: -105px;
+  height: 50px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  color: white;
+}
+
+/* line 87, ../sass/screen.sass */
+#dd_ajax_loading #dd_squares {
+  width: 88px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 92, ../sass/screen.sass */
+#dd_ajax_loading span {
+  display: block;
+  width: 5px;
+  height: 10px;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 101, ../sass/screen.sass */
+#dd_ajax_loading span.filled {
+  background: white;
+}
+
+/* line 104, ../sass/screen.sass */
+#dd_ajax_loading p {
+  display: block;
+  clear: both;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
