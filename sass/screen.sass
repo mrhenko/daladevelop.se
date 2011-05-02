@@ -60,3 +60,29 @@ div#tempload
 #tagcloud input[type=checkbox]:checked + label
 	background: #88bfe8
 	color: #ff0
+
+/* För ajax-laddar-grafiken */
+#dd_ajax_loading
+	position: absolute
+	width: 200px
+	left: 50%
+	background: gray
+	padding: 10px
+	margin: 0px
+	margin-left: -105px
+	height: 50px
+
+#dd_ajax_loading span
+	display: block
+	width: 5px
+	height: 10px
+	float: left
+	margin-right: 15px
+	border: 1px solid #fff
+	+border-radius(5px)
+
+#dd_ajax_loading span.filled
+	background: #fff
+
+#dd_ajax_loading p
+	display: inline

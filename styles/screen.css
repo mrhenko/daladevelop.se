@@ -81,12 +81,52 @@ div#tempload {
   box-shadow: 2px 2px 2px black;
 }
 
-/* line 56, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 #tagcloud label:after {
   content: "";
 }
 
+/* line 60, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
+}
+
+/* För ajax-laddar-grafiken */
+/* line 65, ../sass/screen.sass */
+#dd_ajax_loading {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  background: gray;
+  padding: 10px;
+  margin: 0px;
+  margin-left: -105px;
+  height: 50px;
+}
+
+/* line 75, ../sass/screen.sass */
+#dd_ajax_loading span {
+  display: block;
+  width: 5px;
+  height: 10px;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 84, ../sass/screen.sass */
+#dd_ajax_loading span.filled {
+  background: white;
+}
+
+/* line 87, ../sass/screen.sass */
+#dd_ajax_loading p {
+  display: inline;
 }
