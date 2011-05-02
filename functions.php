@@ -8,8 +8,9 @@
 	function daladevelop_init() {
 		if(!is_admin()) { // Enqueue stylsheets and scripts if frontend
 			wp_enqueue_script('script',  get_bloginfo('template_directory') . '/scripts/script.js');
-			//wp_enqueue_style('inuit', get_bloginfo('template_directory') . '/styles/inuit.css', array(), '1.0', 'all');
+			wp_enqueue_script('jquery-history', get_bloginfo('template_directory') . '/scripts/jquery.history.js');
 			
+			//wp_enqueue_style('inuit', get_bloginfo('template_directory') . '/styles/inuit.css', array(), '1.0', 'all');
 			wp_enqueue_style('style', get_bloginfo('template_directory') . '/styles/screen.css','', '1.0', 'screen');
 			
 			wp_enqueue_style('ajax-slider', get_bloginfo('template_directory') . '/styles/ajax-slider.css');

@@ -1,13 +1,12 @@
 /* För testning av ajax-slidern */
-
+/*
 body.page {
 	width: auto;
 	overflow-x: hidden;
 }
-
+*/
 .page #wrapper {
 	overflow-x: visible;
-	width: 100%;
 	display: block;
 	position: relative;
 }
@@ -21,3 +20,4 @@ body.page {
 }
 
 .page article.new {left: 100%;}
+.page article.new_old {left: -100%;}
