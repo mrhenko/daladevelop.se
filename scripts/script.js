@@ -5,15 +5,17 @@ var timer;
 		// Hijack links and load via ajax
 		
 		$('body.page').delegate('li.ddajax a', 'click', function(event) {
+			if(! ($(this).parent('li').hasClass('current_page_item'))) {
+				show_ajax_loading();
+				event.preventDefault();
 
-			show_ajax_loading();
-			
-			if(! ($(this).hasClass('current_page_item'))) {
+				var url = $(this).attr('href');
+				load_page(url);
+				$('nav#main-menu li').removeClass('current_page_item');
+				$(this).parent('li').addClass('current_page_item');
+			} else {
 				event.preventDefault();
 			}
-
-			var url = $(this).attr('href');
-			load_page(url);
 		});
 
 		// Load blog posts when tag checkboxes are clicked
