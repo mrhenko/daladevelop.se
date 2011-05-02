@@ -2,21 +2,30 @@
 
 <section id="wrapper">
 
-<!-- BEGIN TEST //spektre -->
+<!-- Show all available tags here -->
 <section id="tagcloud">
-	<h1>Testar</h1>
-	<?php
-		$tags = get_tags();
-		echo '<ul>';
-		foreach($tags as $tag)
-		{
-			echo '<li><input type="checkbox" id="'.$tag->slug.'" name="'.$tag->slug.'" value="'.$tag->name.'" /><label for="'.$tag->slug.'">'.$tag->name.'</label></li>';
-		}
-		echo '</ul>';
-	?>
-</section>
-<!-- END TEST -->
+<?php
+# Get all available tags from wordpress
+$tags = get_tags();
 
-<?php get_template_part('loop', 'index'); ?>
+
+# Print a checkbox for each tag
+echo '<ul>';
+foreach($tags as $tag) {
+  echo '<li>'.
+    '<input type="checkbox" id="tag_box" name="tag_box" '.
+        'value="'.$tag->slug.'" />'.
+    '<label for="'.$tag->slug.'">'.$tag->name.'</label>'.
+  '</li>';
+}
+echo '</ul>';
+?>
+</section>
+
+
+<!-- Put all selected blog posts in this div -->
+<section id="posts">
+    <?php get_template_part('loop', 'index'); ?>
+</section>
 
 <?php get_footer(); ?>
