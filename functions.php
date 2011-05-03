@@ -2,6 +2,8 @@
 	add_action('init', 'daladevelop_init');
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
+    add_image_size( 'headerimg', 940, 276 );
+
 	/*
 		Initialize stylesheets and scripts.
 	*/	
