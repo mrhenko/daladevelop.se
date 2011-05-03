@@ -1,172 +1,58 @@
-/* line 3, ../sass/screen.sass */
-body {
-  overflow-x: hidden;
-  font-family: "Lucida Grande";
-  width: 960px;
-  margin: 0 auto;
-}
+/*
+Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 120 of /home/larsemil/programmering/php/daladevelop.se/sass/screen.sass
 
-/* line 9, ../sass/screen.sass */
-#wrapper {
-  width: 960px;
-}
-
-/* line 12, ../sass/screen.sass */
-article {
-  width: 100%;
-  float: left;
-  position: relative;
-  left: 0%;
-}
-
-/* line 19, ../sass/screen.sass */
-article.hidden.old {
-  margin-left: -300%;
-  overflow-x: hidden;
-}
-
-/* line 23, ../sass/screen.sass */
-article.new {
-  left: 100%;
-}
-
-/* line 26, ../sass/screen.sass */
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: #333333;
-}
-
-/* line 31, ../sass/screen.sass */
-div#tempload {
-  display: none;
-}
-
-/* line 34, ../sass/screen.sass */
-#main-menu ul {
-  list-style-type: none;
-}
-/* line 36, ../sass/screen.sass */
-#main-menu ul li {
-  float: left;
-  padding: 0 25px 0 0;
-}
-
-/* line 39, ../sass/screen.sass */
-tagcloud {
-  width: 100px;
-  border: 1px solid;
-  float: right;
-}
-
-/* line 44, ../sass/screen.sass */
-#tagcloud ul {
-  margin: 0px;
-}
-
-/* line 47, ../sass/screen.sass */
-#tagcloud li {
-  display: block;
-  width: 62px;
-  height: 30px;
-  float: left;
-  margin-bottom: 5px;
-  margin-right: 15px;
-}
-
-/* line 55, ../sass/screen.sass */
-#tagcloud input[type=checkbox] {
-  display: block;
-  position: absolute;
-  opacity: 0;
-  width: 62px;
-  height: 30px;
-}
-
-/* line 62, ../sass/screen.sass */
-#tagcloud input[type=checkbox] + label {
-  display: block;
-  width: 60px;
-  line-height: 1.5em;
-  padding: 3px;
-  text-align: center;
-  border: 1px solid black;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-shadow: 2px 2px 2px black;
-  -webkit-box-shadow: 2px 2px 2px black;
-  -o-box-shadow: 2px 2px 2px black;
-  box-shadow: 2px 2px 2px black;
-}
-
-/* line 72, ../sass/screen.sass */
-#tagcloud label:after {
-  content: "";
-}
-
-/* line 75, ../sass/screen.sass */
-#tagcloud input[type=checkbox]:checked + label {
-  background: #88bfe8;
-  color: yellow;
-}
-
-/* För ajax-laddar-grafiken */
-/* line 80, ../sass/screen.sass */
-#dd_ajax_loading {
-  position: absolute;
-  width: 200px;
-  left: 50%;
-  background: gray;
-  padding: 10px;
-  margin: 0px;
-  margin-left: -105px;
-  height: 50px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  color: white;
-}
-
-/* line 92, ../sass/screen.sass */
-#dd_ajax_loading #dd_squares {
-  width: 88px;
-  position: relative;
-  margin: 0 auto;
-}
-
-/* line 97, ../sass/screen.sass */
-#dd_ajax_loading span {
-  display: block;
-  width: 5px;
-  height: 10px;
-  float: left;
-  margin-right: 15px;
-  border: 1px solid white;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-}
-
-/* line 106, ../sass/screen.sass */
-#dd_ajax_loading span.filled {
-  background: white;
-}
-
-/* line 109, ../sass/screen.sass */
-#dd_ajax_loading p {
-  display: block;
-  clear: both;
-  margin: 0;
-  margin-bottom: 10px;
-  text-align: center;
-}
+Backtrace:
+/home/larsemil/programmering/php/daladevelop.se/sass/screen.sass:120
+/usr/lib/ruby/1.8/sass/engine.rb:274:in `tabulate'
+/usr/lib/ruby/1.8/sass/engine.rb:216:in `each_with_index'
+/usr/lib/ruby/1.8/sass/engine.rb:232:in `each'
+/usr/lib/ruby/1.8/sass/engine.rb:232:in `each_with_index'
+/usr/lib/ruby/1.8/sass/engine.rb:232:in `tabulate'
+/usr/lib/ruby/1.8/sass/engine.rb:208:in `_to_tree'
+/usr/lib/ruby/1.8/sass/engine.rb:196:in `_render'
+/usr/lib/ruby/1.8/sass/engine.rb:168:in `render'
+/usr/lib/ruby/1.8/haml/util.rb:251:in `silence_haml_warnings'
+/usr/lib/ruby/1.8/sass/engine.rb:168:in `render'
+/usr/lib/ruby/1.8/compass/compiler.rb:103:in `compile'
+/usr/lib/ruby/1.8/compass/logger.rb:43:in `red'
+/usr/lib/ruby/1.8/compass/compiler.rb:102:in `compile'
+/usr/lib/ruby/1.8/compass/compiler.rb:93:in `compile_if_required'
+/usr/lib/ruby/1.8/compass/compiler.rb:84:in `run'
+/usr/lib/ruby/1.8/compass/compiler.rb:82:in `each'
+/usr/lib/ruby/1.8/compass/compiler.rb:82:in `run'
+/usr/lib/ruby/1.8/compass/commands/watch_project.rb:92:in `recompile'
+/usr/lib/ruby/1.8/compass/commands/watch_project.rb:4:in `to_proc'
+/usr/lib/ruby/1.8/fssm/path.rb:71:in `call'
+/usr/lib/ruby/1.8/fssm/path.rb:71:in `run_callback'
+/usr/lib/ruby/1.8/fssm/path.rb:54:in `callback_action'
+/usr/lib/ruby/1.8/fssm/path.rb:30:in `create'
+/usr/lib/ruby/1.8/fssm/state/directory.rb:23:in `created'
+/usr/lib/ruby/1.8/fssm/state/directory.rb:23:in `each'
+/usr/lib/ruby/1.8/fssm/state/directory.rb:23:in `created'
+/usr/lib/ruby/1.8/fssm/state/directory.rb:15:in `refresh'
+/usr/lib/ruby/1.8/fssm/backends/inotify.rb:12:in `add_handler'
+/usr/lib/ruby/1.8/rb-inotify/notifier.rb:182:in `call'
+/usr/lib/ruby/1.8/rb-inotify/notifier.rb:182:in `watch'
+/usr/lib/ruby/1.8/rb-inotify/watcher.rb:41:in `[]'
+/usr/lib/ruby/1.8/rb-inotify/watcher.rb:41:in `callback!'
+/usr/lib/ruby/1.8/rb-inotify/event.rb:128:in `callback!'
+/usr/lib/ruby/1.8/rb-inotify/notifier.rb:211:in `process'
+/usr/lib/ruby/1.8/rb-inotify/notifier.rb:211:in `each'
+/usr/lib/ruby/1.8/rb-inotify/notifier.rb:211:in `process'
+/usr/lib/ruby/1.8/rb-inotify/notifier.rb:194:in `run'
+/usr/lib/ruby/1.8/fssm/backends/inotify.rb:20:in `run'
+/usr/lib/ruby/1.8/fssm/monitor.rb:24:in `run'
+/usr/lib/ruby/1.8/fssm.rb:17:in `monitor'
+/usr/lib/ruby/1.8/compass/commands/watch_project.rb:61:in `perform'
+/usr/lib/ruby/1.8/compass/commands/base.rb:18:in `execute'
+/usr/lib/ruby/1.8/compass/commands/project_base.rb:19:in `execute'
+/usr/lib/ruby/1.8/compass/exec/switch_ui.rb:175:in `do_command'
+/usr/lib/ruby/1.8/compass/exec/switch_ui.rb:35:in `perform!'
+/usr/lib/ruby/1.8/compass/exec/switch_ui.rb:18:in `run!'
+/usr/bin/compass:26
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 120 of /home/larsemil/programmering/php/daladevelop.se/sass/screen.sass"; }
