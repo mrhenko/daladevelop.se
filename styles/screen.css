@@ -184,3 +184,15 @@ tagcloud {
   -o-column-gap: 20;
   column-gap: 20;
 }
+
+/* line 123, ../sass/screen.sass */
+.twoColumns {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 20;
+  -webkit-column-gap: 20;
+  -o-column-gap: 20;
+  column-gap: 20;
+}
