@@ -1,20 +1,46 @@
+@import 'compass/reset'
 @import 'compass/css3'
+@import "compass/utilities/general/min"
+
+html 
+    margin: 0
+    background-color: #333
 
 body
-    overflow-x: hidden
     font-family: "Lucida Grande"
-    width: 960px
     margin: 0 auto
+    margin-top: 0px
+    color: #fff
+
 
 #wrapper
     width: 960px
+    margin: 0 auto
 
-article
+#branding
+    margin-top: 0px
     width: 100%
-    float: left
+    height: 100px
+    padding-top: 20px
+    background-color: #333
+    color: #fff
+    a
+        color: #fff
+        text-decoration: none
+    text-align: center
+
+    h1
+        font-size: 4em
+        margin-left: 100px
+        +text-shadow(#111, 3px, 3px, 5px)
+article
+    width: 960px
+    margin: 0 auto
     //+transition(all, 1s, linear)
     position: relative
     left: 0%
+    padding-top: 40px
+    +min-height(400px)
 
 article.hidden.old
     margin-left: -300%
@@ -30,6 +56,15 @@ footer
 
 div#tempload
     display: none
+
+nav
+    width: 960px
+    margin: 0 auto
+    background-color: orange
+    a
+        color: #fff
+        background-color: #111
+        text-decoration: none
 
 #main-menu ul
     list-style-type: none
