@@ -1,7 +1,7 @@
 <?php
 	add_action('init', 'daladevelop_init');
     add_theme_support('menus');
-
+    add_theme_support('post-thumbnails');
 	/*
 		Initialize stylesheets and scripts.
 	*/	
