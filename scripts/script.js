@@ -37,11 +37,14 @@ var timer;
 	}); // End of document.ready
 	
 	function load_page(url, history_search) {
-		//window.location.hash = url;
-		
 		if (!history_search) {
 			var stateObj = {url: url};
-			history.pushState(stateObj, 'what', url);
+			history.pushState(stateObj, 'page', url);
+		} else {
+			/* Sätt .current_page_item på rätt länk */
+			var selector = 'a[href=\'' + url + '\']';
+			$('nav#main-menu li').removeClass('current_page_item');
+			$(selector).parent('li').addClass('current_page_item');
 		}
 		
 		url = url + ' #wrapper article';
