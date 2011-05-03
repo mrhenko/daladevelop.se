@@ -35,4 +35,3 @@
 	<nav id="main-menu">
 		<?php wp_nav_menu(array('container' => false)); ?>
     </nav>
-    <br style="clear:both">
