@@ -24,7 +24,7 @@ echo '</ul>';
 
 
 <!-- Put all selected blog posts in this div -->
-<section id="posts">
+<section id="article">
     <?php get_template_part('loop', 'index'); ?>
 </section>
 
