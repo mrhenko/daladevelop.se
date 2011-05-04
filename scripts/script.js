@@ -66,18 +66,18 @@ var timer;
 			
 			if (!history_search) {
 				$('#wrapper').animate({
-					left: '-100%'
+					left: '-960px'
 				}, 1000, function() {
-					$(this).css('left', '0%');
+					$(this).css('left', '0px');
 					$('#wrapper article.old').remove();
 					$('#wrapper article.new').removeClass('hidden').removeClass('new');
 					$('#dd_ajax_loading').remove();
 				});
 			} else {
 				$('#wrapper').animate({
-					left: '100%'
+					left: '960px'
 				}, 1000, function() {
-					$(this).css('left', '0%');
+					$(this).css('left', '0px');
 					$('#wrapper article.old').remove();
 					$('#wrapper article.new_old').removeClass('hidden').removeClass('new_old');
 					$('#dd_ajax_loading').remove();

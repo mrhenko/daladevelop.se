@@ -12,7 +12,6 @@ body.page {
 }
 
 .page article {
-	width: 100%;
 	float: left;
 	display: inline-block;
 	position: absolute;
