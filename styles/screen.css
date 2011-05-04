@@ -82,44 +82,45 @@ body {
   margin: 0 auto;
   margin-top: 0px;
   color: white;
+  overflow-x: hidden;
 }
-/* line 18, ../sass/screen.sass */
+/* line 19, ../sass/screen.sass */
 body a {
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
-/* line 22, ../sass/screen.sass */
+/* line 23, ../sass/screen.sass */
 p {
   margin-top: 10px;
 }
 
-/* line 25, ../sass/screen.sass */
+/* line 26, ../sass/screen.sass */
 h1 {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-/* line 29, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-/* line 33, ../sass/screen.sass */
+/* line 34, ../sass/screen.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 36, ../sass/screen.sass */
+/* line 37, ../sass/screen.sass */
 #wrapper {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 40, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
 #branding {
   margin-top: 0px;
   width: 100%;
@@ -130,12 +131,12 @@ strong {
   color: white;
   text-align: center;
 }
-/* line 48, ../sass/screen.sass */
+/* line 49, ../sass/screen.sass */
 #branding a {
   color: white;
   text-decoration: none;
 }
-/* line 53, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 #branding h1 {
   font-size: 4em;
   font-family: "StreetCorner";
@@ -143,7 +144,7 @@ strong {
   text-shadow: #111111 3px 3px 5px;
 }
 
-/* line 58, ../sass/screen.sass */
+/* line 59, ../sass/screen.sass */
 article {
   width: 960px;
   margin: 0 auto;
@@ -155,30 +156,30 @@ article {
   height: 400px;
 }
 
-/* line 67, ../sass/screen.sass */
+/* line 68, ../sass/screen.sass */
 article.hidden.old {
   margin-left: -300%;
   overflow-x: hidden;
 }
 
-/* line 71, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 article.new {
   left: 100%;
 }
 
-/* line 74, ../sass/screen.sass */
+/* line 75, ../sass/screen.sass */
 footer {
   width: 100%;
   height: 100px;
   background-color: #333333;
 }
 
-/* line 79, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 div#tempload {
   display: none;
 }
 
-/* line 82, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 #main-menu {
   width: 100%;
   margin: 0 auto;
@@ -186,7 +187,7 @@ div#tempload {
   background-color: orange;
   text-align: center;
 }
-/* line 88, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #main-menu a {
   color: black;
   text-decoration: none;
@@ -194,30 +195,30 @@ div#tempload {
   text-shadow: #333333 1px 1px 7px;
 }
 
-/* line 95, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 #main-menu ul {
   list-style-type: none;
   margin-left: 200px;
 }
-/* line 98, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 #main-menu ul li {
   float: left;
   padding: 14px 10px 0 10px;
 }
 
-/* line 101, ../sass/screen.sass */
+/* line 102, ../sass/screen.sass */
 tagcloud {
   width: 100px;
   border: 1px solid;
   float: right;
 }
 
-/* line 106, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 #tagcloud ul {
   margin: 0px;
 }
 
-/* line 109, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 #tagcloud li {
   display: block;
   width: 62px;
@@ -225,7 +226,7 @@ tagcloud {
   margin-right: 15px;
 }
 
-/* line 115, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 #tagcloud input[type=checkbox] {
   display: block;
   position: absolute;
@@ -234,7 +235,7 @@ tagcloud {
   height: 30px;
 }
 
-/* line 122, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 #tagcloud input[type=checkbox] + label {
   display: block;
   width: 60px;
@@ -254,19 +255,19 @@ tagcloud {
   box-shadow: 2px 2px 2px black;
 }
 
-/* line 132, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 #tagcloud label:after {
   content: "";
 }
 
-/* line 135, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
 }
 
 /* För ajax-laddar-grafiken */
-/* line 140, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 #dd_ajax_loading {
   position: absolute;
   width: 200px;
@@ -286,14 +287,14 @@ tagcloud {
   font-weight: bold;
 }
 
-/* line 153, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 #dd_ajax_loading #dd_squares {
   width: 88px;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 158, ../sass/screen.sass */
+/* line 159, ../sass/screen.sass */
 #dd_ajax_loading span {
   display: block;
   width: 5px;
@@ -309,12 +310,12 @@ tagcloud {
   border-radius: 5px;
 }
 
-/* line 167, ../sass/screen.sass */
+/* line 168, ../sass/screen.sass */
 #dd_ajax_loading span.filled {
   background: #111111;
 }
 
-/* line 170, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 #dd_ajax_loading p {
   display: block;
   clear: both;
@@ -324,7 +325,7 @@ tagcloud {
 }
 
 /* To add columns to your text in wordpress simply use these classes on your text */
-/* line 180, ../sass/screen.sass */
+/* line 181, ../sass/screen.sass */
 .threeColumns {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -336,7 +337,7 @@ tagcloud {
   column-gap: 20;
 }
 
-/* line 184, ../sass/screen.sass */
+/* line 185, ../sass/screen.sass */
 .twoColumns {
   -moz-column-count: 2;
   -webkit-column-count: 2;
