@@ -272,6 +272,7 @@ tagcloud {
   position: absolute;
   width: 200px;
   left: 50%;
+  top: 240px;
   background: orange;
   padding: 10px;
   margin: 0px;
@@ -287,14 +288,14 @@ tagcloud {
   font-weight: bold;
 }
 
-/* line 154, ../sass/screen.sass */
+/* line 155, ../sass/screen.sass */
 #dd_ajax_loading #dd_squares {
   width: 88px;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 159, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 #dd_ajax_loading span {
   display: block;
   width: 5px;
@@ -310,12 +311,12 @@ tagcloud {
   border-radius: 5px;
 }
 
-/* line 168, ../sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 #dd_ajax_loading span.filled {
   background: #111111;
 }
 
-/* line 171, ../sass/screen.sass */
+/* line 172, ../sass/screen.sass */
 #dd_ajax_loading p {
   display: block;
   clear: both;
@@ -325,7 +326,7 @@ tagcloud {
 }
 
 /* To add columns to your text in wordpress simply use these classes on your text */
-/* line 181, ../sass/screen.sass */
+/* line 182, ../sass/screen.sass */
 .threeColumns {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -337,7 +338,7 @@ tagcloud {
   column-gap: 20;
 }
 
-/* line 185, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 .twoColumns {
   -moz-column-count: 2;
   -webkit-column-count: 2;
