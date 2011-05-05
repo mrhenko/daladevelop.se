@@ -18,5 +18,5 @@ body.page {
 	left: 0px;
 }
 
-.page article.new {left: 100%;}
-.page article.new_old {left: -100%;}
+.page article.fromright {left: 100%;}
+.page article.fromleft {left: -100%;}
