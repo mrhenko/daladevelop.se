@@ -4,9 +4,15 @@ var currentPosition = 0;
 
 (function ($) { 
 	$(document).ready(function() {
+		/* Add a 'http-loaded'-class to the body.
+			This will be used to prevent Chrome from
+			sliding the first page
+		*/
+		$('body').addClass('http-loaded');
+	
 		// Hijack links and load via ajax
-		
 		$('body.page').delegate('li.ddajax a', 'click', function(event) {
+			$('body').removeClass('http-loaded');
 			if(! ($(this).parent('li').hasClass('current_page_item'))) {
 				show_ajax_loading();
 				event.preventDefault();
@@ -32,10 +38,15 @@ var currentPosition = 0;
 		});
 		
 		window.onpopstate = function(event) {
-			if (event.state != null) {
-				load_page(event.state['url'], true);
+			if (!$('body').hasClass('http-loaded')) {
+				console.log('not-http-loaded');
+				if (event.state != null) {
+					load_page(event.state['url'], true);
+				} else {
+					load_page('', true);
+				}
 			} else {
-				load_page('', true);
+				console.log('http-loaded');
 			}
 		}
 	
