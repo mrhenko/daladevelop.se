@@ -1,81 +1,71 @@
-/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
+  color: black;
+  background: white;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
+  vertical-align: middle;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
+  quotes: "" "";
 }
-/* line 101, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
-  content: none;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 115, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-@font-face {
-  font-family: "StreetCorner";
-  src: url('/styles/fonts/streetcornerbold.ttf') format('truetype');
-}
-
-/* line 8, ../sass/screen.sass */
+@charset "UTF-8";
+/* line 7, ../sass/screen.sass */
 html {
   margin: 0;
   background-color: #333333;
 }
 
-/* line 12, ../sass/screen.sass */
+/* line 11, ../sass/screen.sass */
 body {
   font-family: "Lucida Grande";
   line-height: 1.3em;
@@ -84,22 +74,23 @@ body {
   color: white;
   overflow-x: hidden;
 }
-/* line 19, ../sass/screen.sass */
+/* line 18, ../sass/screen.sass */
 body a {
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
-/* line 23, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 p {
   margin-top: 10px;
 }
 
-/* line 26, ../sass/screen.sass */
+/* line 25, ../sass/screen.sass */
 h1 {
   font-size: 2em;
   margin-bottom: 10px;
+  font-family: "Vollkorn", arial, serif;
 }
 
 /* line 30, ../sass/screen.sass */
@@ -139,12 +130,11 @@ strong {
 /* line 54, ../sass/screen.sass */
 #branding h1 {
   font-size: 4em;
-  font-family: "StreetCorner";
   margin-left: 100px;
   text-shadow: #111111 3px 3px 5px;
 }
 
-/* line 59, ../sass/screen.sass */
+/* line 58, ../sass/screen.sass */
 article {
   width: 880px;
   margin: 0 auto;
@@ -156,30 +146,30 @@ article {
   height: 400px;
 }
 
-/* line 67, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 article.hidden.old {
   margin-left: -300%;
   overflow-x: hidden;
 }
 
-/* line 71, ../sass/screen.sass */
+/* line 70, ../sass/screen.sass */
 article.new {
   left: 100%;
 }
 
-/* line 74, ../sass/screen.sass */
+/* line 73, ../sass/screen.sass */
 footer {
   width: 100%;
   height: 100px;
   background-color: #333333;
 }
 
-/* line 79, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 div#tempload {
   display: none;
 }
 
-/* line 82, ../sass/screen.sass */
+/* line 81, ../sass/screen.sass */
 #main-menu {
   width: 100%;
   margin: 0 auto;
@@ -187,7 +177,7 @@ div#tempload {
   background-color: orange;
   text-align: center;
 }
-/* line 88, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #main-menu a {
   color: black;
   text-decoration: none;
@@ -195,30 +185,30 @@ div#tempload {
   text-shadow: #333333 1px 1px 7px;
 }
 
-/* line 95, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
 #main-menu ul {
   list-style-type: none;
   margin-left: 200px;
 }
-/* line 98, ../sass/screen.sass */
+/* line 97, ../sass/screen.sass */
 #main-menu ul li {
   float: left;
   padding: 14px 10px 0 10px;
 }
 
-/* line 101, ../sass/screen.sass */
+/* line 100, ../sass/screen.sass */
 tagcloud {
   width: 100px;
   border: 1px solid;
   float: right;
 }
 
-/* line 106, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 #tagcloud ul {
   margin: 0px;
 }
 
-/* line 109, ../sass/screen.sass */
+/* line 108, ../sass/screen.sass */
 #tagcloud li {
   display: block;
   width: 62px;
@@ -226,7 +216,7 @@ tagcloud {
   margin-right: 15px;
 }
 
-/* line 115, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 #tagcloud input[type=checkbox] {
   display: block;
   position: absolute;
@@ -235,7 +225,7 @@ tagcloud {
   height: 30px;
 }
 
-/* line 122, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 #tagcloud input[type=checkbox] + label {
   display: block;
   width: 60px;
@@ -249,25 +239,25 @@ tagcloud {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 2px 2px 2px black;
-  -webkit-box-shadow: 2px 2px 2px black;
-  -o-box-shadow: 2px 2px 2px black;
-  box-shadow: 2px 2px 2px black;
+  -moz-box-shadow: 2px 2px 2px black 1px 1px 5px 0;
+  -webkit-box-shadow: 2px 2px 2px black 1px 1px 5px 0;
+  -o-box-shadow: 2px 2px 2px black 1px 1px 5px 0;
+  box-shadow: 2px 2px 2px black 1px 1px 5px 0;
 }
 
-/* line 132, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 #tagcloud label:after {
   content: "";
 }
 
-/* line 135, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
 }
 
 /* För ajax-laddar-grafiken */
-/* line 140, ../sass/screen.sass */
+/* line 139, ../sass/screen.sass */
 #dd_ajax_loading {
   position: absolute;
   width: 200px;
@@ -288,14 +278,14 @@ tagcloud {
   font-weight: bold;
 }
 
-/* line 154, ../sass/screen.sass */
+/* line 153, ../sass/screen.sass */
 #dd_ajax_loading #dd_squares {
   width: 88px;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 159, ../sass/screen.sass */
+/* line 158, ../sass/screen.sass */
 #dd_ajax_loading span {
   display: block;
   width: 5px;
@@ -311,12 +301,12 @@ tagcloud {
   border-radius: 5px;
 }
 
-/* line 168, ../sass/screen.sass */
+/* line 167, ../sass/screen.sass */
 #dd_ajax_loading span.filled {
   background: #111111;
 }
 
-/* line 171, ../sass/screen.sass */
+/* line 170, ../sass/screen.sass */
 #dd_ajax_loading p {
   display: block;
   clear: both;
@@ -326,7 +316,7 @@ tagcloud {
 }
 
 /* To add columns to your text in wordpress simply use these classes on your text */
-/* line 181, ../sass/screen.sass */
+/* line 180, ../sass/screen.sass */
 .threeColumns {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -338,7 +328,7 @@ tagcloud {
   column-gap: 20;
 }
 
-/* line 185, ../sass/screen.sass */
+/* line 184, ../sass/screen.sass */
 .twoColumns {
   -moz-column-count: 2;
   -webkit-column-count: 2;
