@@ -119,8 +119,8 @@ strong {
 #branding {
   margin-top: 0px;
   width: 100%;
-  height: 100px;
-  padding-top: 40px;
+  height: 140px;
+  padding: 0px;
   background-color: #333333;
   background-image: url("../images/bg.png");
   color: white;
@@ -130,15 +130,18 @@ strong {
 #branding a {
   color: white;
   text-decoration: none;
+  display: block;
 }
-/* line 53, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 #branding h1 {
   font-size: 4em;
-  margin-left: 100px;
+  display: block;
+  text-align: center;
   text-shadow: #111111 3px 3px 5px;
+  line-height: 140px;
 }
 
-/* line 57, ../sass/screen.sass */
+/* line 60, ../sass/screen.sass */
 article {
   width: 880px;
   margin: 0 auto;
@@ -150,30 +153,30 @@ article {
   height: 400px;
 }
 
-/* line 65, ../sass/screen.sass */
+/* line 68, ../sass/screen.sass */
 article.hidden.old {
   margin-left: -300%;
   overflow-x: hidden;
 }
 
-/* line 69, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 article.new {
   left: 100%;
 }
 
-/* line 72, ../sass/screen.sass */
+/* line 75, ../sass/screen.sass */
 footer {
   width: 100%;
   height: 100px;
   background-color: #333333;
 }
 
-/* line 77, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 div#tempload {
   display: none;
 }
 
-/* line 80, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 #main-menu {
   width: 100%;
   margin: 0 auto;
@@ -181,7 +184,7 @@ div#tempload {
   background-color: orange;
   text-align: center;
 }
-/* line 86, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 #main-menu a {
   color: black;
   text-decoration: none;
@@ -189,30 +192,30 @@ div#tempload {
   text-shadow: #333333 1px 1px 7px;
 }
 
-/* line 93, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 #main-menu ul {
   list-style-type: none;
   margin-left: 200px;
 }
-/* line 96, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 #main-menu ul li {
   float: left;
   padding: 14px 10px 0 10px;
 }
 
-/* line 99, ../sass/screen.sass */
+/* line 102, ../sass/screen.sass */
 tagcloud {
   width: 100px;
   border: 1px solid;
   float: right;
 }
 
-/* line 104, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 #tagcloud ul {
   margin: 0px;
 }
 
-/* line 107, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 #tagcloud li {
   display: block;
   width: 62px;
@@ -220,7 +223,7 @@ tagcloud {
   margin-right: 15px;
 }
 
-/* line 113, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 #tagcloud input[type=checkbox] {
   display: block;
   position: absolute;
@@ -229,7 +232,7 @@ tagcloud {
   height: 30px;
 }
 
-/* line 120, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 #tagcloud input[type=checkbox] + label {
   display: block;
   width: 60px;
@@ -249,19 +252,19 @@ tagcloud {
   box-shadow: 2px 2px 2px black;
 }
 
-/* line 130, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 #tagcloud label:after {
   content: "";
 }
 
-/* line 133, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
 }
 
 /* För ajax-laddar-grafiken */
-/* line 138, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 #dd_ajax_loading {
   position: absolute;
   width: 200px;
@@ -282,14 +285,14 @@ tagcloud {
   font-weight: bold;
 }
 
-/* line 152, ../sass/screen.sass */
+/* line 155, ../sass/screen.sass */
 #dd_ajax_loading #dd_squares {
   width: 88px;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 157, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 #dd_ajax_loading span {
   display: block;
   width: 5px;
@@ -305,12 +308,12 @@ tagcloud {
   border-radius: 5px;
 }
 
-/* line 166, ../sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 #dd_ajax_loading span.filled {
   background: #111111;
 }
 
-/* line 169, ../sass/screen.sass */
+/* line 172, ../sass/screen.sass */
 #dd_ajax_loading p {
   display: block;
   clear: both;
@@ -320,7 +323,7 @@ tagcloud {
 }
 
 /* To add columns to your text in wordpress simply use these classes on your text */
-/* line 179, ../sass/screen.sass */
+/* line 182, ../sass/screen.sass */
 .threeColumns {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -332,7 +335,7 @@ tagcloud {
   column-gap: 20;
 }
 
-/* line 183, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 .twoColumns {
   -moz-column-count: 2;
   -webkit-column-count: 2;
