@@ -11,6 +11,7 @@
 	<link href="favicon.ico" type="image/x-icon" rel="icon" />
 	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
 	
+	<script type="text/javascript" src="<?php bloginfo("stylesheet_directory") ?>/scripts/modernizr-1.7.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		if(typeof jQuery == 'undefined') { document.write(unescape("%3Cscript src='<?php bloginfo('template_directory'); ?>/scripts/jquery.min.js' type='text/javascript'%3E%3C/script%3E")); }
