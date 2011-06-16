@@ -7,21 +7,33 @@ get_header(); ?>
 
 <section id="wrapper">
     <div id="startstor">
-    
-        <div class="startingress">
-        Senaste tiden har regnet öst ner. Det har bådat gott för daladevelop och vi kommer att... 
+        <?php 
+        $query = array(
+            'post__in'=>get_option('sticky_posts')
+        );
+        query_posts($query);
+        $counter = 0;
+        while ( have_posts() ) : the_post(); ?>
+        <?php if($counter++ == 0):?>
+            <?php if(has_post_thumbnail()): ?>
+                <?php the_post_thumbnail('biggie'); ?>
+            <?php endif; ?>
+            <div class="startingress">
+                <?php the_excerpt(); ?>
+            </div>
         </div>
-    </div>
-    <div class="startright">
-    
-        <div class="startingress">
-        Ingress2 handlar om lite andra saker, ingen kan veta riktigt.
-        </div>
-    </div>
+    <?php else: ?> 
 
-    <div class="startright">
-        <div class="startingress">
-            Ingress3 handlar om både det ena och det andra. 
-        </div>
+        <div class="startright">
+            <?php if(has_post_thumbnail()): ?>
+                <?php the_post_thumbnail('smallie'); ?>
+            <?php endif; ?>
+            <div class="startingress">
+            <?php the_excerpt(); ?>
+            </div>
+    </div>
+    <?php endif; ?>
+
+    <?php endwhile; ?>
     </div>
 </section>

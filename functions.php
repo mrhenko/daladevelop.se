@@ -3,6 +3,8 @@
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
     add_image_size( 'headerimg', 940, 276 );
+    add_image_size( 'biggie', 535, 200,true);
+    add_image_size( 'smallie',320 ,128, true);
 
 	/*
 		Initialize stylesheets and scripts.
