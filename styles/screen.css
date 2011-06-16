@@ -205,34 +205,36 @@ div#tempload {
 /* line 107, ../sass/screen.sass */
 #startstor {
   width: 550px;
+  height: 460px;
   float: left;
 }
 
-/* line 111, ../sass/screen.sass */
+/* line 112, ../sass/screen.sass */
 .startright {
   width: 330px;
+  height: 230px;
   float: right;
 }
 
-/* line 115, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 .startingress {
   background-color: #555555;
 }
 
 /* For the tags on the blog page for filtering */
-/* line 121, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 tagcloud {
   width: 100px;
   border: 1px solid;
   float: right;
 }
 
-/* line 126, ../sass/screen.sass */
+/* line 128, ../sass/screen.sass */
 #tagcloud ul {
   margin: 0px;
 }
 
-/* line 129, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 #tagcloud li {
   display: block;
   width: 62px;
@@ -240,7 +242,7 @@ tagcloud {
   margin-right: 15px;
 }
 
-/* line 135, ../sass/screen.sass */
+/* line 137, ../sass/screen.sass */
 #tagcloud input[type=checkbox] {
   display: block;
   position: absolute;
@@ -249,7 +251,7 @@ tagcloud {
   height: 30px;
 }
 
-/* line 142, ../sass/screen.sass */
+/* line 144, ../sass/screen.sass */
 #tagcloud input[type=checkbox] + label {
   display: block;
   width: 60px;
@@ -269,19 +271,19 @@ tagcloud {
   box-shadow: 2px 2px 2px black 1px 1px 5px 0;
 }
 
-/* line 152, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 #tagcloud label:after {
   content: "";
 }
 
-/* line 155, ../sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 #tagcloud input[type=checkbox]:checked + label {
   background: #88bfe8;
   color: yellow;
 }
 
 /* För ajax-laddar-grafiken */
-/* line 160, ../sass/screen.sass */
+/* line 162, ../sass/screen.sass */
 #dd_ajax_loading {
   position: absolute;
   width: 200px;
@@ -302,14 +304,14 @@ tagcloud {
   font-weight: bold;
 }
 
-/* line 174, ../sass/screen.sass */
+/* line 176, ../sass/screen.sass */
 #dd_ajax_loading #dd_squares {
   width: 88px;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 179, ../sass/screen.sass */
+/* line 181, ../sass/screen.sass */
 #dd_ajax_loading span {
   display: block;
   width: 5px;
@@ -325,12 +327,12 @@ tagcloud {
   border-radius: 5px;
 }
 
-/* line 188, ../sass/screen.sass */
+/* line 190, ../sass/screen.sass */
 #dd_ajax_loading span.filled {
   background: #111111;
 }
 
-/* line 191, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 #dd_ajax_loading p {
   display: block;
   clear: both;
@@ -340,7 +342,7 @@ tagcloud {
 }
 
 /* To add columns to your text in wordpress simply use these classes on your text */
-/* line 201, ../sass/screen.sass */
+/* line 203, ../sass/screen.sass */
 .threeColumns {
   -moz-column-count: 3;
   -webkit-column-count: 3;
@@ -352,7 +354,7 @@ tagcloud {
   column-gap: 20;
 }
 
-/* line 205, ../sass/screen.sass */
+/* line 207, ../sass/screen.sass */
 .twoColumns {
   -moz-column-count: 2;
   -webkit-column-count: 2;
