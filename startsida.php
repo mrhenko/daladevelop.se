@@ -3,7 +3,7 @@
 Template Name: Startsida
  */
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <section id="wrapper">
     <div id="startstor">
